@@ -106,9 +106,9 @@ sortable.success = function(results) {
 
 |name|type|description|default value|
 |----|----|-----------|-------------|
-|element|Document|The container of all the cards to be moved|_required_|
+|element|Document|The container of all the cards to be moved.|_required_|
 |scrollable|Document|the container to which to refer if the container of the movable elements is scrollable.|document.body|
-|column|boolean|You can't use CSS to define the display of your elements (row or column), so you need to use this argument|false|
+|column|boolean|You can't use CSS to define the display of your elements (row or column), so you need to use this argument.|false|
 
 ## Responsive
 
