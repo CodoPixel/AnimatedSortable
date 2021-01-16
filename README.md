@@ -86,7 +86,7 @@ Now, the HTML is done. However, these elements must have specific CSS properties
 }
 ```
 
-*Note: all the elements must have fixed `width` & `height`. Also, you cannot use `margin` and should use `box-sizing: border-box` if you want.*
+*Note: all the elements must have fixed `width` & `height`. Also, you cannot use `margin` and should use `box-sizing: border-box` if you want to use `padding`.*
 
 Perfect, now we can use Javascript! Let's create a new `Sortable` object:
 
