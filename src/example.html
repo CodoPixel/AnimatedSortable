@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing Sortable</title>
+
+    <!-- the css is important: -->
+    <link rel="stylesheet" href="style-example.css">
+</head>
+<body>
+
+    <h1>Use your cursor, move the elements and see the magic happen.</h1>
+
+    <div id="container" class="all-cards" data-sortable=".card">
+        <div class="card" data-position="0" data-id="1">
+            <div class="content">
+                <h2>Step 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="1" data-id="2">
+            <div class="content">
+                <h2>Step 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="2" data-id="3">
+            <div class="content">
+                <h2>Step 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="3" data-id="4">
+            <div class="content">
+                <h2>Step 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="4" data-id="5">
+            <div class="content">
+                <h2>Step 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="5" data-id="6">
+            <div class="content">
+                <h2>Step 6</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="6" data-id="7">
+            <div class="content">
+                <h2>Step 7</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="7" data-id="8">
+            <div class="content">
+                <h2>Step 8</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="8" data-id="9">
+            <div class="content">
+                <h2>Step 9</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="9" data-id="10">
+            <div class="content">
+                <h2>Step 10</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="10" data-id="11">
+            <div class="content">
+                <h2>Step 11</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+
+        <div class="card" data-position="11" data-id="12">
+            <div class="content">
+                <h2>Step 12</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic eveniet, non.</p>
+            </div>
+        </div>
+    </div>
+
+    <p>Hey !</p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="Sortable.js"></script>
+    <script>
+        var container = document.querySelector('#container');
+
+        var sortable = new Sortable(container, null, false);
+        sortable.success = function(results) {
+            console.log(results);
+        };
+    </script>
+</body>
+</html>

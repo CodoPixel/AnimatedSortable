@@ -1,0 +1,54 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0; padding: 0;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+.all-cards {
+    width: 100%;
+    height: auto;
+
+    position: relative; /* necessary */
+}
+
+.card {
+    touch-action: none; /* recommended */
+
+    /* necessary: */
+    width: 450px; /* has to be fix */
+    height: 200px; /* has to be fix */
+    margin: 0; /* has to be 0 */
+    box-sizing: border-box; /* necessary if you want to add padding */
+    padding: 10px;
+
+    /* better with this: */
+    transition: 0.5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none;
+
+    /* for the example: */
+    background-color: #fff;
+    color: #303030;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* To pretend that there is space between the elements, when this is not the case. */
+.card .content {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+/* important: */
+
+.is-dragged {
+    transition: 0s;
+    opacity: 0.7;
+    z-index: 9000;
+}
